@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastro de Cliente</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body style="margin: 0px; width: 350px; font-family: 'Roboto Condensed', sans-serif;">
+        <header style="background-color:rgb(41, 41, 139); margin:0px; ">
+            <hgroup style="color:rgb(255, 221, 31); margin:0px;">
+                <h2 style="margin:0px; font-family: 'Oswald', sans-serif;">iMall</h2>
+                <h3 style="margin:0px;">O seu super-mercado online!</h3>
+            </hgroup>
+        </header>
+        <main  style="background-color:rgb(62, 79, 161); margin:0px;">
+            <header style="color:white; text-align: center;">
+                <h3 style="margin:0px;">Agradecemos a sua compra!</h3>
+                <p style="margin:0px;">Antes de finalizarmos precisamos cadastra-lo</p>
+            </header>
+            <form action="servidor/" method="POST">
+                <fieldset style="color:white;">
+                    <div>
+                        <!-- Nome -->
+                        <label for=name>Nome</label><br />
+                        <input type=text size="40" id=name class=forminput placeholder="Digite aqui">
+                    </div>
+                    <div>
+                        <!-- Sobrenome -->
+                        <label for=surname>Sobrenome</label><br />
+                        <input type=text size="40" id=surname class=forminput placeholder="Digite aqui">
+                    </div>
+                    <div>
+                        <!-- RG -->
+                        <label for=rg>RG<i>(somente números)</i></label><br />
+                        <input type=text id=rg class=forminput pattern="[0-9]{8,9}">
+                    </div>
+                    <div>
+                        <!-- CPF -->
+                        <label for=cpf>CPF<i>(somente números)</i></label><br />
+                        <input type=text id=cpf class=forminput pattern="[0-9]{11}">
+                    </div>
+                    <div>
+                        <!-- Endereço -->
+                        <label for=address>Endereço</label><br />
+                        <input type=text size="40" id=address class=forminput placeholder="Digite aqui">
+                    </div>
+                    <div>
+                        <!-- Manter Endereço -->
+                        <fieldset>
+                            <legend>Este será o endereço da entrega?</legend>
+                            <div>
+                                <input type=radio id=yaddress class=forminput name=keepaddress value=naddress>
+                                <label for=yaddress>Sim</label>
+                            </div>
+                            <div>
+                                <input type=radio id=naddress class=forminput name=keepaddress value=naddress>
+                                <label for=naddress>Não</label>
+                            </div>
+                        </fieldset>
+                    </div><br />
+                    <div>
+                        <!-- E-mail -->
+                        <label for=email>E-mail</label><br />
+                        <input type=email size="40" id=email class="forminput" placeholder="exemplo@exemplo.com.br">
+                    </div>
+                    <div>
+                        <!-- Senha -->
+                        <label for=passwd>Senha</label><br />
+                        <input type=password size="40" id=passwd class=forminput>
+                    </div>
+                    <div>
+                        <!-- Confirmar Senha -->
+                        <label for=passwdc>Confirmar senha</label><br />
+                        <input type=password size="40" id=passwdc class=forminput>
+                    </div>
+                    <div>
+                        <!-- Termos de Uso -->
+                        <input type=checkbox id=terms class=forminput>
+                        <label for=terms>Você concordo com nossos <a style="color:aliceblue" href="">Termos de Uso</a></label>
+                    </div>
+                    <div style="text-align: center;">
+                        <!-- Botões -->
+                        <input type=submit value="Continuar para pagamento">
+                        <input type=reset value="Limpar">
+                    </div>
+                </fieldset><br />
+            </form>
+        </main>
+    </body>
+</html>
