@@ -16,17 +16,17 @@
                     <!-- text -->
                     <div>                        
                         <label>text, para entrada de texto:</label>
-                        <input type="text" id=text value="Digite texto aqui" />
+                        <input type="text" id=text name=text value="Digite texto aqui" />
                     </div>
                     <!-- password -->
                     <div>
                         <label>password, para senhas, oculta o texto:</label>
-                        <input type="password" id=passw value="Digite texto aqui" />
+                        <input type="password" id=passw name=passw value="Digite texto aqui" />
                     </div>
                     <!-- datas -->
                     <div>
                         <label>date, para datas:</label>
-                        <input type="date" id=date />
+                        <input type="date" name=date id=date />
                     </div>
                     <!-- radio -->
                     <div>
@@ -47,11 +47,11 @@
                         <fieldset>
                             <legend>checkbox</legend>
                             <div>
-                                <input type="checkbox" id=check1 value="a" />
+                                <input type="checkbox" name=check1 id=check1 value="a" />
                                 <label for="check1">para escolhas não obrigatórias;</label>
                             </div>
                             <div>
-                                <input type="checkbox" id=check2 value="b" />
+                                <input type="checkbox" name=check2 id=check2 value="b" />
                                 <label for="check2">e não exclusivas.</label>
                             </div>                                            
                         </fieldset>
@@ -59,7 +59,7 @@
                     <!-- range -->
                     <div>
                         <label>range, controles sem precisao com comprimento e passo definidos:</label>
-                        <input type="range" min="0" max="10" step=1  />                        
+                        <input type="range" name=range min="0" max="10" step=1  />                        
                     </div>
                 </fieldset>
                 <div style="margin-left:2px">
