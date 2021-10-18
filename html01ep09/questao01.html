@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <title>canvas</title>
+        <style>
+            canvas{
+                border: solid 1px black
+            }
+        </style>
+        <script type="application/javascript">
+            function draw() {
+                const canvas = document.getElementById("canvas");
+                const ctx = canvas.getContext('2d');
+
+                ctx.fillStyle = "green";
+                // retangulo verde
+                ctx.fillRect(0, 0, 640, 450);
+
+                ctx.fillStyle = "yellow";
+                // losango amarelo
+                ctx.beginPath();
+                ctx.moveTo(320,20);
+                ctx.lineTo(620, 225);
+                ctx.lineTo(320, 430);
+                ctx.lineTo(20, 225);
+                ctx.lineTo(320,20);
+                ctx.fill();
+                ctx.closePath();
+
+                ctx.fillStyle = "blue";
+                // círculo azul
+                ctx.beginPath();
+                ctx.arc( 320, 225, 130, 0, Math.PI*2, true);
+                ctx.fill();
+                ctx.closePath();
+
+                ctx.fillStyle = "white";
+                // faixa branca
+                // origin(196, 185), destino(449, 241)
+                ctx.beginPath();
+                ctx.moveTo(196, 185);
+                ctx.bezierCurveTo(340, 185, 449, 241, 449, 241);
+                ctx.lineTo(449, 251);
+                ctx.bezierCurveTo(340, 195, 193, 195, 193, 195);
+                ctx.fill();
+                ctx.closePath();
+            }
+        </script>
+    </head>
+    <body onload="draw();">
+        <header>
+        <h3>Questão 1</h3>
+        <p>Demonstre o uso do canvas</p>
+        </header>
+        <main>
+            <canvas id=canvas height="450" width="640">Navegador bom hein?</canvas>
+        </main>        
+    </body>
+</html>
