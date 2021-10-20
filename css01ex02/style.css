@@ -1,0 +1,25 @@
+body {    
+    background-color:rgb(194, 212, 228);
+}
+
+.pagina {
+    width: 600px;
+}
+body main p {
+    margin:0;
+    font-size:16px;    
+}
+p:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+p::first-letter {
+    font-size: large;
+    font-weight: bold;
+}
+#titulo {
+    font-family: sans-serif;
+}
+a[href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors"]:hover {
+    color:white;
+}
