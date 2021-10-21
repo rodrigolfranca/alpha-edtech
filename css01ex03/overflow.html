@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF=8">
+        <title>Overflowing</title>
+        <style>
+            main {
+                display: flex;
+                column-gap: 4px;
+            }
+            div {                
+                width: 150px;
+                height: 50px;
+                border: blue solid 1px;
+                background-color: cyan;
+            }
+            #hidden {
+                overflow: hidden;
+            }
+            #visible {
+                overflow: visible;
+            }
+            #auto{
+                overflow: auto;
+            }
+            #scroll{
+                overflow: scroll;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Demonstração de Tratamento de Overflow</h3><br />
+        <main>            
+            <div id=hidden><p>Hidden: Faz o overflow no conteúdo ser escondido.</p></div>
+            <div id=visible><p>Visible: Faz o overflow se tornar visível, mesmo que ultrapasse os limites da box</p></div>
+            <div id=auto><p>auto: Adciona controles de scrolling nas direções que se façam necessárias</p></div>
+            <div id=scroll><p>scroll: Adciona controles de scrolling em todas as direções, mas ficarão inativos caso sejam desnecessários</p></div>
+        </main>
+    </body>
+</html>

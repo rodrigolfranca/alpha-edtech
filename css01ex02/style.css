@@ -7,7 +7,8 @@ body {
 }
 body main p {
     margin:0;
-    font-size:16px;    
+    font-size:16px;
+	text-indent: 30px;    
 }
 p:hover{
     text-decoration: underline;
@@ -15,7 +16,10 @@ p:hover{
 }
 p::first-letter {
     font-size: large;
-    font-weight: bold;
+    font-weight: bold;	
+}
+p::first-line {
+	text-indent: 30px;
 }
 #titulo {
     font-family: sans-serif;
