@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bordas</title>
+        <style>
+            #root{
+                background-color: rgb(109, 100, 76);
+                width: 1000px;
+                height: fit-content; 
+                text-align: center;
+                border-radius: 10px;
+            }
+            h3{
+                background-color: rgb(167, 146, 89);
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            #flex{
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                width: 405px;
+                column-gap: 5px;
+                column-count: 3;
+                
+            }
+            #solido{
+                box-sizing: border-box;
+                border: 1px solid;
+                width: 200px;
+            }
+            #grossa{
+                box-sizing: border-box;
+                border: 1rem solid;
+                width: 200px;
+            }
+            #picote{
+                box-sizing: border-box;
+                border: 1rem dashed;
+                width: 200px;
+            }
+            #duas{
+                box-sizing: border-box;
+                border: .5rem double;
+                width: 200px;
+            }
+            #style{
+                box-sizing: border-box;
+                border:1rem;
+                border-style: inset none dotted groove;
+                width: 200px;
+            }
+            #radius{
+                box-sizing: border-box;
+                border: 1px solid;
+                width: 200px;
+                border-radius: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id=root>
+            <header>
+                <h3>Uma Página sobre Bordas :D</h3>
+            </header>
+            <main>
+                <p>Com CSS nós podemos estilizar as bordas. Nós podemos:</p>
+                <div id=flex>
+                    <div id=solido><p>solidifica-las</p></div>
+                    <div id=grossa><p>engrossa-las</p></div>
+                    <div id=picote><p>picota-las</p></div>                    
+                    <div id=duas><p>multiplica-las</p></div>
+                    <div id=style><p>estiliza-las</p></div>
+                    <div id=radius><p>arredonda-las</p></div>                    
+                </div>
+                <p>Só não da pra por catupiry nelas. :(</p> 
+            </main>
+        </div>        
+    </body>
+</html>
