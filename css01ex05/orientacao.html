@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Brincando com Direções</title>
+        <style>
+            body{
+                background-color: rgb(45, 60, 197);
+            }
+            main{
+                height: 201px;
+                width: 305px;
+                margin: 0 auto;
+
+                background-color: #fff;
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 5px;
+            }
+            div{
+                height: 100px;
+                width: 150px;
+                background-color:rgb(170, 214, 214);
+            }
+            #a {
+                writing-mode: horizontal-tb;
+            }
+            #b {
+                writing-mode: vertical-rl;
+            }
+            #c {
+                writing-mode: horizontal-tb;
+                direction: rtl;
+            }
+            #d {
+                writing-mode:vertical-lr;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div id=a><p>Ciranda</p></div>
+            <div id=b><p>Cirandinha</p></div>
+            <div id=c><p>Vamos dar a meia volta volta e meia vamos dar</p></div>
+            <div id=d><p>Vamos todos cirandar</p></div>
+        </main>
+    </body>
+</html>
