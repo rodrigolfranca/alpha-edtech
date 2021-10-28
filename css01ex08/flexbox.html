@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Flexbox Uma Religião</title>
+        <style>
+            body{
+                background-color: rgb(212, 186, 159);                
+            }
+            main {
+                box-sizing: border-box;
+                display: flex;
+                justify-content:space-around;
+                flex-wrap: wrap;
+                height: 1300px;
+                width: 1300px;
+                background-color: aliceblue;
+                border: solid 1px black;
+                padding: 3em;                
+            }
+            .container {
+                width: 500px;
+                height: 200px;
+                border: 1px solid black;
+                border-radius: 20px;
+                display:flex;
+                flex-wrap: wrap;
+            }
+            img {
+                width: fit-content;
+                height:fit-content;
+            }
+            .item{
+                background-color: rgb(113, 113, 177);
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+            }
+            #imagem{
+                justify-content: center;
+                align-content: center;
+            }
+            #centro{
+                justify-content: center;
+                align-content: center;
+            }
+            #vertical{
+                flex-direction: column;
+                justify-content: space-around;
+                align-content: center;
+            }
+            #horizontal{
+                justify-content: space-around;
+                align-content: center;
+            }
+            #etc1{
+                flex-direction: column;
+                justify-content: flex-end;
+                align-content: flex-end;
+            }
+            #etc2{
+                justify-content: space-between;
+                align-content: center;
+            }
+            #etc3{
+                justify-content: flex-end;
+                align-content: flex-end;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class=container id=imagem>
+                <img src="./assets/flexbox.jpg" />
+            </div>
+            <div class=container id=centro>
+                <div class=item></div>
+                <div class=item></div>
+                <div class=item></div>
+            </div>
+            <div class=container id=vertical>
+                <div class=item></div>
+                <div class=item></div>
+                <div class=item></div>
+            </div>
+            <div class=container id=horizontal>
+                <div class=item></div>
+                <div class=item></div>
+                <div class=item></div>
+            </div>
+            <div class=container id=etc1>
+                <div class=item></div>
+                <div class=item></div>
+                <div class=item></div>
+            </div>
+            <div class=container id=etc2>
+                <div class=item></div>
+                <div class=item></div>
+                <div class=item></div>
+            </div>
+            <div class=container id=etc3>
+                <div class=item></div>
+                <div class=item></div>
+                <div class=item></div>
+            </div>
+        </main>
+    </body>
+</html>
