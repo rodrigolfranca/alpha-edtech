@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Wrap is Magic!</title>
+        <style>
+            body{
+                background-color: rgb(212, 186, 159);
+                text-align: center;
+            }
+            main {
+                box-sizing: border-box;
+                display: flex;
+                justify-content:space-around;
+                flex-wrap: wrap;
+                height: 800px;
+                width: 1200px;
+                margin: 0 auto;
+                background-color: aliceblue;
+                border: solid 1px black;
+                padding: 3em;                
+            }
+            .container {
+                width: 500px;
+                height: 200px;
+                border: 1px solid black;
+                border-radius: 20px;
+                display:flex;
+            }            
+            .item{
+                box-sizing: border-box;
+                background-color: rgb(113, 113, 177);
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                padding: 5px;
+            }
+            #um{
+                justify-content: center;
+                align-content: center;
+            }
+            #dois{
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;                
+            }
+            #tres{
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;                
+            }
+            #quatro{
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;                
+            }
+            #cinco{
+                justify-content:space-between;
+                align-content: center;
+            }
+            #seis{
+                flex-flow: wrap row-reverse;
+                justify-content:space-between;
+                align-content: center;                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>flexWRAP is Magic!</h1>
+        <p>nowrap --------------------------> WRAP!</p>
+        <main>            
+            <div class=container id=um>
+                <div class=item>1</div>
+                <div class=item>2</div>
+                <div class=item>3</div>
+                <div class=item>4</div>
+                <div class=item>5</div>
+                <div class=item>6</div>
+                <div class=item>7</div>
+                <div class=item>8</div>
+                <div class=item>9</div>
+                <div class=item>10</div>
+                <div class=item>11</div>
+                <div class=item>12</div>
+            </div>            
+            <div class=container id=dois>
+                <div class=item>1</div>
+                <div class=item>2</div>
+                <div class=item>3</div>
+                <div class=item>4</div>
+                <div class=item>5</div>
+                <div class=item>6</div>
+                <div class=item>7</div>
+                <div class=item>8</div>
+                <div class=item>9</div>
+                <div class=item>10</div>
+                <div class=item>11</div>
+                <div class=item>12</div>
+            </div>
+            <div class=container id=tres>
+                <div class=item>1</div>
+                <div class=item>2</div>
+                <div class=item>3</div>
+                <div class=item>4</div>
+                <div class=item>5</div>
+                <div class=item>6</div>
+                <div class=item>7</div>
+                <div class=item>8</div>
+                <div class=item>9</div>
+                <div class=item>10</div>
+                <div class=item>11</div>
+                <div class=item>12</div>
+            </div>
+            <div class=container id=quatro>
+                <div class=item>1</div>
+                <div class=item>2</div>
+                <div class=item>3</div>
+                <div class=item>4</div>
+                <div class=item>5</div>
+                <div class=item>6</div>
+                <div class=item>7</div>
+                <div class=item>8</div>
+                <div class=item>9</div>
+                <div class=item>10</div>
+                <div class=item>11</div>
+                <div class=item>12</div>
+            </div>
+            <div class=container id=cinco>
+                <div class=item>1</div>
+                <div class=item>2</div>
+                <div class=item>3</div>
+                <div class=item>4</div>
+                <div class=item>5</div>
+                <div class=item>6</div>
+                <div class=item>7</div>
+                <div class=item>8</div>
+                <div class=item>9</div>
+                <div class=item>10</div>
+                <div class=item>11</div>
+                <div class=item>12</div>
+            </div>
+            <div class=container id=seis>
+                <div class=item>1</div>
+                <div class=item>2</div>
+                <div class=item>3</div>
+                <div class=item>4</div>
+                <div class=item>5</div>
+                <div class=item>6</div>
+                <div class=item>7</div>
+                <div class=item>8</div>
+                <div class=item>9</div>
+                <div class=item>10</div>
+                <div class=item>11</div>
+                <div class=item>12</div>
+            </div>
+        </main>
+    </body>
+</html>
